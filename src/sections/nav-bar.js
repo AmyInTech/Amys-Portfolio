@@ -1,9 +1,4 @@
-import {
-  ImFacebook,
-  ImTwitter,
-  ImInstagram,
-  ImLinkedin2,
-} from "react-icons/im";
+import { ImTwitter, ImLinkedin2, ImGithub, ImMail2 } from "react-icons/im";
 
 function NavBar() {
   return (
@@ -38,17 +33,33 @@ function NavBar() {
           </a>
         </div>
         <div class="social-media-icons-container">
-          <a class="social-media-link" href="http://facebook.com">
-            <ImFacebook />
-          </a>
-          <a class="social-media-link" href="http://twitter.com">
+          <a
+            class="social-media-link"
+            target="_blank"
+            href="http://twitter.com/AmyInTech"
+          >
             <ImTwitter />
           </a>
-          <a class="social-media-link" href="http://instagram.com">
-            <ImInstagram />
-          </a>
-          <a class="social-media-link" href="http://linkedin.com">
+          <a
+            class="social-media-link"
+            href="http://linkedin.com"
+            target="_blank"
+          >
             <ImLinkedin2 />
+          </a>
+          <a
+            class="social-media-link"
+            href="github.com/AmyInTech"
+            target="_blank"
+          >
+            <ImGithub />
+          </a>
+          <a
+            class="social-media-link"
+            href="mailto: amyqdinh@gmail.com"
+            target="_blank"
+          >
+            <ImMail2 />
           </a>
         </div>
       </div>
