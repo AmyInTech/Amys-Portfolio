@@ -37,6 +37,7 @@ function NavBar() {
             class="social-media-link"
             target="_blank"
             href="http://twitter.com/AmyInTech"
+            rel="noreferrer"
           >
             <ImTwitter />
           </a>
@@ -44,6 +45,7 @@ function NavBar() {
             class="social-media-link"
             href="http://linkedin.com"
             target="_blank"
+            rel="noreferrer"
           >
             <ImLinkedin2 />
           </a>
@@ -51,6 +53,7 @@ function NavBar() {
             class="social-media-link"
             href="github.com/AmyInTech"
             target="_blank"
+            rel="noreferrer"
           >
             <ImGithub />
           </a>
@@ -58,6 +61,7 @@ function NavBar() {
             class="social-media-link"
             href="mailto: amyqdinh@gmail.com"
             target="_blank"
+            rel="noreferrer"
           >
             <ImMail2 />
           </a>
