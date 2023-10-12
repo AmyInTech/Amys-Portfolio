@@ -6,11 +6,13 @@ function Contact() {
       <div class="contact-container">
         <div class="section-heading">Contact Me</div>
         <div class="contact-content">
-          <img
-            src="/images/send-message-2.avif"
-            alt="Desk with laptop setup"
-            class="contact-img"
-          ></img>
+          <div class="contact-img-container">
+            <img
+              src="/images/send-message-2.avif"
+              alt="Desk with laptop setup"
+              class="contact-img"
+            ></img>
+          </div>
           <form class="contact-form">
             {/* First Name */}
             <div class="contact-elements">

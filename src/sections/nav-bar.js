@@ -1,6 +1,32 @@
-import { ImTwitter, ImLinkedin2, ImGithub, ImMail2 } from "react-icons/im";
+import {
+  ImTwitter,
+  ImLinkedin2,
+  ImGithub,
+  ImMail2,
+  ImMenu,
+  ImCross,
+} from "react-icons/im";
+import { useState } from "react";
 
 function NavBar() {
+  const [toggleNav, setToggleNav] = useState(false);
+
+  const handleToggleOpenNav = () => {
+    setToggleNav(true);
+  };
+
+  const handleToggleCloseNav = () => {
+    setToggleNav(false);
+  };
+
+  const mobileMenuClick = () => {
+    if (toggleNav === true) {
+      handleToggleCloseNav();
+    } else {
+      handleToggleOpenNav();
+    }
+  };
+
   return (
     <nav>
       <div className="nav-container">
@@ -14,7 +40,19 @@ function NavBar() {
           </a>
         </div>
 
-        <div class="nav-buttons">
+        <div
+          class={`nav-buttons ${
+            toggleNav === true ? "is-mobile-show" : "is-mobile-hide"
+          }`}
+          id="nav-buttons"
+        >
+          <a
+            class="cross-icon"
+            href="#mobile-menu-close"
+            onClick={mobileMenuClick}
+          >
+            <ImCross />
+          </a>
           <a href="#home-section" id="home" class="selected-nav-section">
             Home
           </a>
@@ -64,6 +102,13 @@ function NavBar() {
             rel="noreferrer"
           >
             <ImMail2 />
+          </a>
+          <a
+            class="collapse-icon"
+            onClick={mobileMenuClick}
+            href="#mobile-menu"
+          >
+            <ImMenu />
           </a>
         </div>
       </div>
