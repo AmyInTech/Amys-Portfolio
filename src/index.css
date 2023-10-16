@@ -1133,7 +1133,7 @@ nav {
   }
   .contact-container {
     padding: 0px;
-    padding-top: 400px;
+    padding-top: 140px;
   }
   .contact-img-container {
     height: 350px;
@@ -1150,7 +1150,7 @@ nav {
 
 @media screen and (max-width: 800px) {
   .contact-container {
-    padding-top: 300px;
+    padding-top: 80px;
   }
   .contact-content {
     padding: 40px;
@@ -1173,6 +1173,9 @@ nav {
 }
 
 @media screen and (max-width: 700px) {
+  .contact-container {
+    padding-top: 0px;
+  }
   .contact-img-container {
     background-position-y: -400px;
   }
@@ -1198,9 +1201,6 @@ nav {
 }
 
 @media screen and (max-width: 600px) {
-  .contact-container {
-    padding-top: 200px;
-  }
   .contact-img-container {
     background-position-y: -420px;
   }
