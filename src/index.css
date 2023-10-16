@@ -677,77 +677,81 @@ nav {
   .about-me-content {
     gap: 30px;
   }
-  @media screen and (max-width: 845px) {
-    .about-me-content {
-      padding: 40px;
-    }
-    .about-me-left {
-      flex-direction: column-reverse;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-    }
-    .about-me-left-text h4 {
-      margin: 0px 40px;
-      text-align: center;
-      font-size: 24px;
-    }
-    .about-me-left-text h8 {
-      text-align: center;
-      padding: 10px 20px;
-      font-size: 20px;
-    }
-    .about-me-left-img {
-      width: 38%;
-    }
+}
+@media screen and (max-width: 845px) {
+  .about-me-content {
+    padding: 40px;
   }
-  @media screen and (max-width: 700px) {
-    .about-me-container {
-      padding: 40px;
-    }
-    .about-me-content {
-      padding-bottom: 0px;
-    }
-    .about-me-left-img {
-      width: 50%;
-    }
-    .about-me-left-text h8 {
-      font-size: 18px;
-      padding: 0px 40px;
-    }
-    .accordion-title {
-      font-size: 22px;
-    }
-    .accordion-summary p {
-      font-size: 16px;
-    }
-    .open-button {
-      font-size: 12px;
-    }
-    .accordion-content p {
-      font-size: 16px;
-    }
-    .close-button {
-      font-size: 12px;
-    }
-    .accordion-summary li {
-      font-size: 16px;
-    }
+  .about-me-left {
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
   }
-  @media screen and (max-width: 600px) {
-    .about-me-content {
-      padding: 40px 0px;
-    }
+  .about-me-left-text h4 {
+    margin: 0px 40px;
+    text-align: center;
+    font-size: 24px;
   }
-  @media screen and (max-width: 500px) {
-    .about-me-left-text h4 {
-      font-size: 22px;
-      margin: 0px 20px;
-    }
-    .about-me-left-text h8 {
-      font-size: 18px;
-      padding: 0px 10px;
-    }
+  .about-me-left-text h8 {
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 20px;
+  }
+  .about-me-left-img {
+    width: 38%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about-me-container {
+    padding: 40px;
+    padding-top: 100px;
+  }
+  .about-me-content {
+    padding-bottom: 0px;
+  }
+  .about-me-left-img {
+    width: 50%;
+  }
+  .about-me-left-text h8 {
+    font-size: 18px;
+    padding: 0px 40px;
+  }
+  .accordion-title {
+    font-size: 22px;
+  }
+  .accordion-summary p {
+    font-size: 16px;
+  }
+  .open-button {
+    font-size: 12px;
+  }
+  .accordion-content p {
+    font-size: 16px;
+  }
+  .close-button {
+    font-size: 12px;
+  }
+  .accordion-summary li {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about-me-content {
+    padding: 40px 0px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .about-me-left-text h4 {
+    font-size: 22px;
+    margin: 0px 20px;
+  }
+  .about-me-left-text h8 {
+    font-size: 18px;
+    padding: 0px 10px;
   }
 }
 
@@ -1221,7 +1225,10 @@ nav {
 }
 
 @media screen and (max-width: 400px) {
-  .contact-container {
-    padding: 80px 0px;
+  .contact-img-container {
+    background-position-y: -240px;
+  }
+  .contact-form {
+    padding-bottom: 120px;
   }
 }
