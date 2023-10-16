@@ -1009,7 +1009,7 @@ nav {
 
 .contact-img-container {
   width: 400px;
-  background-image: url("/Users/amydinh/Desktop/AmyInTech/ad-portfolio/public/images/send-message-2.avif");
+  background-image: url("../public/images/send-message-2.avif");
   background-repeat: none;
   background-position: center;
   background-size: cover;
