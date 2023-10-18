@@ -81,7 +81,7 @@ function NavBar() {
           </a>
           <a
             class="social-media-link"
-            href="http://linkedin.com"
+            href="https://www.linkedin.com/in/amyqdinh/"
             target="_blank"
             rel="noreferrer"
           >
