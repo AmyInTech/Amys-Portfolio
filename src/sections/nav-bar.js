@@ -27,6 +27,10 @@ function NavBar() {
     }
   };
 
+  const handleLinkClick = () => {
+    handleToggleCloseNav();
+  };
+
   return (
     <nav>
       <div className="nav-container">
@@ -45,6 +49,7 @@ function NavBar() {
             toggleNav === true ? "is-mobile-show" : "is-mobile-hide"
           }`}
           id="nav-buttons"
+          onClick={handleToggleCloseNav}
         >
           <a
             class="cross-icon"
@@ -53,20 +58,26 @@ function NavBar() {
           >
             <ImCross />
           </a>
-          <a href="#home-section" id="home" class="selected-nav-section">
+
+          <a
+            href="#home-section"
+            id="home"
+            class="selected-nav-section"
+            onClick={handleLinkClick}
+          >
             Home
           </a>
-          <a href="#about-me-section" id="aboutme">
+          <a href="#about-me-section" id="aboutme" onClick={handleLinkClick}>
             {" "}
             About Me
           </a>
-          <a href="#portfolio-section" id="portfolio">
+          <a href="#portfolio-section" id="portfolio" onClick={handleLinkClick}>
             Portfolio
           </a>
-          <a href="#resume-section" id="resume">
+          <a href="#resume-section" id="resume" onClick={handleLinkClick}>
             Resume
           </a>
-          <a href="#contact-section" id="contact">
+          <a href="#contact-section" id="contact" onClick={handleLinkClick}>
             Contact
           </a>
         </div>

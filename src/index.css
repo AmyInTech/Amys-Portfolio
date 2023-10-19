@@ -965,6 +965,9 @@ nav {
     width: 48%;
     height: 300px;
   }
+  .project-card-popup button {
+    visibility: visible;
+  }
 }
 
 @media screen and (max-width: 700px) {
@@ -979,10 +982,33 @@ nav {
     width: 100%;
     height: 200px;
   }
+  .project-card-popup button {
+    visibility: visible;
+  }
+  .project-card:hover .project-card-popup {
+    animation-name: none; /* Disable animation */
+  }
 }
+
 @media screen and (max-width: 600px) {
   .portfolio-container {
     padding: 80px 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .portfolio-container {
+    padding: 80px 30px;
+  }
+  .project-card-popup button {
+    padding: 8px;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .project-card-popup button {
+    font-size: 10px;
+    margin: 0px 4px;
   }
 }
 /* ---------- Resume ---------- */
@@ -1241,9 +1267,9 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 80px;
   background-color: whitesmoke;
   position: relative;
+  box-sizing: border-box;
 }
 
 .up-arrow-footer {
@@ -1259,7 +1285,7 @@ nav {
   font-weight: 600;
   position: absolute;
   top: -32px;
-  left: 50%;
+  right: 50%;
   transform: translateX(50%);
   transition: all 0.3s;
 }
@@ -1271,10 +1297,11 @@ nav {
 .footer-content-container {
   width: 1050px;
   display: flex;
+  padding: 80px;
 }
 
 .footer-left {
-  width: 30%;
+  width: 25%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1285,7 +1312,7 @@ nav {
 }
 
 .footer-right {
-  width: 70%;
+  width: 75%;
   display: flex;
   align-items: flex-start;
   justify-content: space-around;
@@ -1326,15 +1353,18 @@ nav {
 }
 
 .navigation-content a {
-  color: var(--shade-pink);
+  color: var(--gray);
   font-size: 12px;
   text-decoration: none;
   letter-spacing: 1px;
   cursor: pointer;
+  transition: all 0.3s;
 }
 
 .navigation-content a:hover {
-  color: var(--pink);
+  color: var(--shade-pink);
+  transform: scale(1.2);
+  font-weight: 700;
 }
 
 .footer-content {
@@ -1353,7 +1383,7 @@ nav {
 }
 
 .footer-contact-name p {
-  color: var(--shade-pink);
+  color: var(--gray);
   font-size: 12px;
 }
 
@@ -1371,6 +1401,18 @@ nav {
   justify-content: flex-start;
   align-items: center;
   gap: 8px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.contact-social-container:hover {
+  color: var(--shade-pink);
+  transform: scale(1.1);
+  font-weight: 700;
+}
+
+.contact-social-container .contact-link:hover {
+  color: var(--shade-pink);
 }
 
 .contact-icon {
@@ -1379,26 +1421,24 @@ nav {
   align-items: center;
   color: white;
   padding: 10px;
-  background-color: var(--medium-pink);
+  background-color: var(--gray);
   border-radius: var(--border-radius);
-  cursor: pointer;
 }
 
-.contact-icon:hover {
-  color: white;
+.contact-social-container:hover .contact-icon {
   background-color: var(--shade-pink);
-  animation-duration: 0.3s;
+  color: white;
+}
+
+.contact-social-container:hover .contact-link {
+  color: var(--shade-pink);
 }
 
 .contact-link {
   text-decoration: none;
-  color: var(--shade-pink);
-  cursor: pointer;
+  color: var(--gray);
   font-size: 12px;
-}
-
-.contact-link:hover {
-  color: var(--pink);
+  transition: all 0.3s;
 }
 
 .social-media-row {
@@ -1410,7 +1450,7 @@ nav {
 }
 
 .copyright-container {
-  padding-top: 30px;
+  padding: 30px 0px;
 }
 
 .copyright-container h6 {
@@ -1435,8 +1475,6 @@ nav {
   }
   .footer-content-container {
     width: 900px;
-  }
-  .footer-container {
     padding: 60px;
   }
 }
@@ -1448,14 +1486,29 @@ nav {
     align-items: center;
     gap: 30px;
   }
+  .footer-right {
+    width: 100%;
+  }
+  .footer-right {
+    width: 100%;
+  }
   .footer-logo {
     width: 100px;
   }
   .footer-content-container {
     width: 800px;
   }
-  .up-arrow-footer {
-    display: none;
+  .navigation-content a {
+    color: var(--shade-pink);
+  }
+  .footer-contact-name p {
+    color: var(--shade-pink);
+  }
+  .contact-icon {
+    background-color: var(--shade-pink);
+  }
+  .contact-link {
+    color: var(--shade-pink);
   }
 }
 
@@ -1496,6 +1549,7 @@ nav {
 @media screen and (max-width: 610px) {
   .footer-content-container {
     width: 500px;
+    padding: 80px 40px 40px 40px;
   }
   .navigation-content {
     gap: 20px;
@@ -1503,9 +1557,6 @@ nav {
 }
 
 @media screen and (max-width: 510px) {
-  .footer-container {
-    padding: 40px;
-  }
   .footer-content-container {
     width: 400px;
   }
@@ -1539,5 +1590,8 @@ nav {
   }
   .navigation-content {
     width: 270px;
+  }
+  .copyright-container {
+    padding: 0px 0px 30px 0px;
   }
 }
