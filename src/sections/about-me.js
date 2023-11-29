@@ -94,6 +94,13 @@ function AboutMe() {
         <div class="section-heading">About Me</div>
         <div class="about-me-content">
           <div class="about-me-left">
+            <div class="about-me-left-img">
+              <img
+                src="/images/amy-headshot-2.JPG"
+                alt="Amy Dinh Headshot"
+                class="about-me-photo"
+              />
+            </div>
             <div class="about-me-left-text">
               <h4>Front End Web Developer</h4>
               <h8>
@@ -101,13 +108,6 @@ function AboutMe() {
                 with a passion for crafting user-friendly, visually engaging,
                 and dynamic web applications.
               </h8>
-            </div>
-            <div class="about-me-left-img">
-              <img
-                src="/images/amy-headshot-2.JPG"
-                alt="Amy Dinh Headshot"
-                class="about-me-photo"
-              />
             </div>
           </div>
           <div class="about-me-right">
