@@ -5,29 +5,69 @@ function Portfolio() {
         <div class="section-heading">Portfolio</div>
         <div class="portfolio-content">
           <div class="project-cards">
-            <div class="project-card">
-              Project #1
+            {/* Hospice Medical */}
+            <div class="project-card project-card-1">
+              <div class="project-card-popup">
+                <button>
+                  <a
+                    href="https://hospice-medical.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="live-demo-link"
+                  >
+                    Live Demo
+                  </a>
+                </button>
+                <button>
+                  <a
+                    href="https://github.com/AmyInTech/Hospice-Medical.git"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="source-code-link"
+                  >
+                    Source Code
+                  </a>
+                </button>
+              </div>
+            </div>
+            {/* Ready Set Cook */}
+            <div class="project-card project-card-2">
+              <div class="project-card-popup">
+                <button>
+                  <a
+                    href="https://readysetcook.netlify.app/"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="live-demo-link"
+                  >
+                    Live Demo
+                  </a>
+                </button>
+                <button>
+                  <a
+                    href="https://github.com/AmyInTech/ReadySetCook.git"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="source-code-link"
+                  >
+                    Source Code
+                  </a>
+                </button>
+              </div>
+            </div>
+            {/* Meal Wheel */}
+            <div class="project-card project-card-3">
+              {" "}
+              Coming Soon
               <div class="project-card-popup">
                 <button>Live Demo</button>
                 <button>Source Code</button>
               </div>
             </div>
-            <div class="project-card">
-              Project #2
-              <div class="project-card-popup">
-                <button>Live Demo</button>
-                <button>Source Code</button>
-              </div>
-            </div>
-            <div class="project-card">
-              Project #3
-              <div class="project-card-popup">
-                <button>Live Demo</button>
-                <button>Source Code</button>
-              </div>
-            </div>
-            <div class="project-card">
-              Project #4
+            {/* Macarons Site */}
+            <div class="project-card project-card-4">
+              {" "}
+              Coming Soon
               <div class="project-card-popup">
                 <button>Live Demo</button>
                 <button>Source Code</button>
