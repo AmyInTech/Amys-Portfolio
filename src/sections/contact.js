@@ -1,6 +1,21 @@
 import { BsSend } from "react-icons/bs";
 
 function Contact() {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+
+    const myForm = event.target;
+    const formData = new FormData(myForm);
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: new URLSearchParams(formData).toString(),
+    })
+      .then(() => window.location.href("/#contact-section"))
+      .catch((error) => alert(error));
+  };
+
   return (
     <section id="contact-section" class="contact-section">
       <div class="contact-container">
@@ -12,8 +27,14 @@ function Contact() {
             aria-label="Send Message Image"
           ></div>
 
-          <form class="contact-form" name="contact" method="POST" netlify>
-            <input type="hidden" name="contact" value="contact" />
+          <form
+            class="contact-form"
+            name="contact"
+            method="POST"
+            netlify
+            onSubmit={handleSubmit}
+          >
+            <input type="hidden" name="form-name" value="contact" />
 
             {/* First Name */}
             <div class="contact-elements">
