@@ -6,8 +6,18 @@ function Contact() {
       <div class="contact-container">
         <div class="section-heading">Contact Me</div>
         <div class="contact-content">
-          <div class="contact-img-container"></div>
-          <form class="contact-form">
+          <div
+            class="contact-img-container"
+            role="img"
+            aria-label="Send Message Image"
+          ></div>
+
+          <form
+            class="contact-form"
+            name="contact"
+            method="POST"
+            data-netlify="true"
+          >
             {/* First Name */}
             <div class="contact-elements">
               <div class="name-elements">
