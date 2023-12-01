@@ -17,6 +17,7 @@ function Contact() {
             name="contact"
             method="POST"
             data-netlify="true"
+            netlify
           >
             {/* First Name */}
             <div class="contact-elements">
