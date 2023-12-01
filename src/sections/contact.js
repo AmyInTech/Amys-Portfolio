@@ -12,13 +12,7 @@ function Contact() {
             aria-label="Send Message Image"
           ></div>
 
-          <form
-            class="contact-form"
-            name="contact"
-            method="POST"
-            data-netlify="true"
-            netlify
-          >
+          <form class="contact-form" name="contact" netlify>
             {/* First Name */}
             <div class="contact-elements">
               <div class="name-elements">
