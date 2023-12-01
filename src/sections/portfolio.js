@@ -30,6 +30,7 @@ function Portfolio() {
                 </button>
               </div>
             </div>
+
             {/* Ready Set Cook */}
             <div class="project-card project-card-2">
               <div class="project-card-popup">
@@ -55,15 +56,23 @@ function Portfolio() {
                 </button>
               </div>
             </div>
-            {/* Meal Wheel */}
+
+            {/* SRE Freelance*/}
             <div class="project-card project-card-3">
-              {" "}
-              Coming Soon
               <div class="project-card-popup">
-                <button>Live Demo</button>
-                <button>Source Code</button>
+                <button>
+                  <a
+                    href="https://saukrapidselectric.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="live-demo-link"
+                  >
+                    Live Demo
+                  </a>
+                </button>
               </div>
             </div>
+
             {/* Macarons Site */}
             <div class="project-card project-card-4">
               {" "}

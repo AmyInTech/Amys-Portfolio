@@ -1001,6 +1001,13 @@ nav {
   background-size: cover;
 }
 
+.project-card-3 {
+  background-image: url("../public/images/project3-preview.png");
+  background-repeat: none;
+  background-position: center;
+  background-size: cover;
+}
+
 .project-card:hover {
   background-color: var(--light-gray);
 }
