@@ -12,7 +12,9 @@ function Contact() {
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
       body: new URLSearchParams(formData).toString(),
     })
-      .then(() => window.location.href("/#contact-section"))
+      .then(() => {
+        window.location.href = "/#contact-section";
+      })
       .catch((error) => alert(error));
   };
 
