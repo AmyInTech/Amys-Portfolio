@@ -1,6 +1,4 @@
 import { BsSend } from "react-icons/bs";
-import Plunk from "@plunk/node";
-import { render } from "@react-email/render";
 
 function Contact() {
   return (
