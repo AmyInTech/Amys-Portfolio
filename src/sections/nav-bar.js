@@ -100,7 +100,7 @@ function NavBar() {
           </a>
           <a
             class="social-media-link"
-            href="github.com/AmyInTech"
+            href="https://github.com/AmyInTech"
             target="_blank"
             rel="noreferrer"
           >
