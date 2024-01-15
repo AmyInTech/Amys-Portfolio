@@ -5,6 +5,8 @@ import AboutMe from "./sections/about-me";
 import Portfolio from "./sections/portfolio";
 import Contact from "./sections/contact";
 import Footer from "./sections/footer";
+import { ToastContainer, Zoom } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function App() {
   return (
@@ -14,6 +16,20 @@ function App() {
       <AboutMe />
       <Portfolio />
       <Contact />
+      <ToastContainer
+        position="bottom-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+        transition={Zoom}
+      />
+
       <Footer />
     </body>
   );
