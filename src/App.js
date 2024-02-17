@@ -3,6 +3,7 @@ import NavBar from "./sections/nav-bar";
 import Home from "./sections/home";
 import AboutMe from "./sections/about-me";
 import Portfolio from "./sections/portfolio";
+import Resume from "./sections/resume";
 import Contact from "./sections/contact";
 import Footer from "./sections/footer";
 import { ToastContainer, Zoom } from "react-toastify";
@@ -15,6 +16,7 @@ function App() {
       <Home />
       <AboutMe />
       <Portfolio />
+      <Resume />
       <Contact />
       <ToastContainer
         position="bottom-center"

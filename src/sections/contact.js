@@ -148,15 +148,17 @@ function Contact() {
                 ></textarea>
               </div>
 
-              <button
-                type="submit"
-                id="contact-submit-btn"
-                class="contact-submit-btn"
-                disabled={loading} //Disable the button when loading is true
-              >
-                {loading ? "Sending..." : "Send Message"}
-                <BsSend id="send-icon" />
-              </button>
+              <div class="submit-btn-container">
+                <button
+                  type="submit"
+                  id="contact-submit-btn"
+                  class="contact-submit-btn"
+                  disabled={loading} //Disable the button when loading is true
+                >
+                  {loading ? "Sending..." : "Send Message"}
+                  <BsSend id="send-icon" />
+                </button>
+              </div>
             </div>
           </form>
         </div>

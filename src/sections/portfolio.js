@@ -5,12 +5,12 @@ function Portfolio() {
         <div class="section-heading">Portfolio</div>
         <div class="portfolio-content">
           <div class="project-cards">
-            {/* Hospice Medical */}
+            {/* Simply Sweet by Amy Site */}
             <div class="project-card project-card-1">
               <div class="project-card-popup">
                 <button>
                   <a
-                    href="https://hospice-medical.netlify.app/"
+                    href="https://simplysweetbyamy.com/"
                     target="_blank"
                     rel="noreferrer"
                     class="live-demo-link"
@@ -20,7 +20,7 @@ function Portfolio() {
                 </button>
                 <button>
                   <a
-                    href="https://github.com/AmyInTech/Hospice-Medical.git"
+                    href="https://github.com/AmyInTech/Simply-Sweet-by-Amy.git"
                     target="_blank"
                     rel="noreferrer"
                     class="source-code-link"
@@ -31,8 +31,24 @@ function Portfolio() {
               </div>
             </div>
 
-            {/* Ready Set Cook */}
+            {/* SRE Freelance*/}
             <div class="project-card project-card-2">
+              <div class="project-card-popup">
+                <button>
+                  <a
+                    href="https://saukrapidselectric.com/"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="live-demo-link"
+                  >
+                    Live Demo
+                  </a>
+                </button>
+              </div>
+            </div>
+
+            {/* Ready Set Cook */}
+            <div class="project-card project-card-3">
               <div class="project-card-popup">
                 <button>
                   <a
@@ -57,12 +73,12 @@ function Portfolio() {
               </div>
             </div>
 
-            {/* SRE Freelance*/}
-            <div class="project-card project-card-3">
+            {/* Hospice Medical */}
+            <div class="project-card project-card-4">
               <div class="project-card-popup">
                 <button>
                   <a
-                    href="https://saukrapidselectric.com/"
+                    href="https://hospice-medical.netlify.app/"
                     target="_blank"
                     rel="noreferrer"
                     class="live-demo-link"
@@ -70,16 +86,16 @@ function Portfolio() {
                     Live Demo
                   </a>
                 </button>
-              </div>
-            </div>
-
-            {/* Macarons Site */}
-            <div class="project-card project-card-4">
-              {" "}
-              Coming Soon
-              <div class="project-card-popup">
-                <button>Live Demo</button>
-                <button>Source Code</button>
+                <button>
+                  <a
+                    href="https://github.com/AmyInTech/Hospice-Medical.git"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="source-code-link"
+                  >
+                    Source Code
+                  </a>
+                </button>
               </div>
             </div>
           </div>

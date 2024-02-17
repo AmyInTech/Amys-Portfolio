@@ -6,10 +6,11 @@ import {
   ImMenu,
   ImCross,
 } from "react-icons/im";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function NavBar() {
   const [toggleNav, setToggleNav] = useState(false);
+  const [activeSection, setActiveSection] = useState("home");
 
   const handleToggleOpenNav = () => {
     setToggleNav(true);
@@ -17,6 +18,11 @@ function NavBar() {
 
   const handleToggleCloseNav = () => {
     setToggleNav(false);
+  };
+
+  const handleLinkClick = (section) => {
+    setActiveSection(section);
+    handleToggleCloseNav();
   };
 
   const mobileMenuClick = () => {
@@ -27,9 +33,22 @@ function NavBar() {
     }
   };
 
-  const handleLinkClick = () => {
-    handleToggleCloseNav();
-  };
+  useEffect(() => {
+    const handleScroll = () => {
+      const sections = document.querySelectorAll("section[id]");
+      sections.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top >= 0 && rect.bottom <= window.innerHeight) {
+          setActiveSection(section.id);
+        }
+      });
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <nav>
@@ -45,7 +64,7 @@ function NavBar() {
         </div>
 
         <div
-          class={`nav-buttons ${
+          className={`nav-buttons ${
             toggleNav === true ? "is-mobile-show" : "is-mobile-hide"
           }`}
           id="nav-buttons"
@@ -62,22 +81,51 @@ function NavBar() {
           <a
             href="#home-section"
             id="home"
-            class="selected-nav-section"
-            onClick={handleLinkClick}
+            className={activeSection === "home" ? "selected-nav-section" : ""}
+            onClick={() => handleLinkClick("home")}
           >
             Home
           </a>
-          <a href="#about-me-section" id="aboutme" onClick={handleLinkClick}>
-            {" "}
+          <a
+            href="#about-me-section"
+            id="aboutme"
+            className={
+              activeSection === "about-me-section" ? "selected-nav-section" : ""
+            }
+            onClick={() => handleLinkClick("about-me-section")}
+          >
             About Me
           </a>
-          <a href="#portfolio-section" id="portfolio" onClick={handleLinkClick}>
+          <a
+            href="#portfolio-section"
+            id="portfolio"
+            className={
+              activeSection === "portfolio-section"
+                ? "selected-nav-section"
+                : ""
+            }
+            onClick={() => handleLinkClick("portfolio-section")}
+          >
             Portfolio
           </a>
-          <a href="#resume-section" id="resume" onClick={handleLinkClick}>
+          <a
+            href="#resume-section"
+            id="resume"
+            className={
+              activeSection === "resume-section" ? "selected-nav-section" : ""
+            }
+            onClick={() => handleLinkClick("resume-section")}
+          >
             Resume
           </a>
-          <a href="#contact-section" id="contact" onClick={handleLinkClick}>
+          <a
+            href="#contact-section"
+            id="contact"
+            className={
+              activeSection === "contact-section" ? "selected-nav-section" : ""
+            }
+            onClick={() => handleLinkClick("contact-section")}
+          >
             Contact
           </a>
         </div>
