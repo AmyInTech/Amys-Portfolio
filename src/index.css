@@ -22,6 +22,7 @@
   --medium-pink: #ff8785;
   --shade-pink: #ff5a57;
   --rosey: rgb(255, 134, 180);
+  --navy: #073f74;
 
   --whitesmoke: whitesmoke;
   --light-gray: #e9e9e7;
@@ -1170,8 +1171,8 @@ nav {
   justify-content: center;
   align-items: center;
   gap: 30px;
-  padding: 50px 70px;
-  background-color: var(--pink);
+  padding: 70px 70px;
+  background-color: rgb(249, 183, 182, 0.75);
   border-radius: 5px;
   box-shadow: 1px 1px 12px #cacaca;
 }
