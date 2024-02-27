@@ -140,7 +140,7 @@ function Contact() {
                   id="message"
                   name="message"
                   rows="8"
-                  maxlength="3000"
+                  maxLength="3000"
                   placeholder="Type your message here"
                   required
                   onChange={handleChange}

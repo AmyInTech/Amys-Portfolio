@@ -71,7 +71,7 @@ function NavBar() {
           onClick={handleToggleCloseNav}
         >
           <a
-            class="cross-icon"
+            className="cross-icon"
             href="#mobile-menu-close"
             onClick={mobileMenuClick}
           >
@@ -129,9 +129,9 @@ function NavBar() {
             Contact
           </a>
         </div>
-        <div class="social-media-icons-container">
+        <div className="social-media-icons-container">
           <a
-            class="social-media-link"
+            className="social-media-link"
             target="_blank"
             href="http://twitter.com/AmyInTech"
             rel="noreferrer"
@@ -139,7 +139,7 @@ function NavBar() {
             <ImTwitter />
           </a>
           <a
-            class="social-media-link"
+            className="social-media-link"
             href="https://www.linkedin.com/in/amyqdinh/"
             target="_blank"
             rel="noreferrer"
@@ -147,7 +147,7 @@ function NavBar() {
             <ImLinkedin2 />
           </a>
           <a
-            class="social-media-link"
+            className="social-media-link"
             href="https://github.com/AmyInTech"
             target="_blank"
             rel="noreferrer"
@@ -155,7 +155,7 @@ function NavBar() {
             <ImGithub />
           </a>
           <a
-            class="social-media-link"
+            className="social-media-link"
             href="mailto: amyqdinh@gmail.com"
             target="_blank"
             rel="noreferrer"
@@ -163,7 +163,7 @@ function NavBar() {
             <ImMail2 />
           </a>
           <a
-            class="collapse-icon"
+            className="collapse-icon"
             onClick={mobileMenuClick}
             href="#mobile-menu"
           >

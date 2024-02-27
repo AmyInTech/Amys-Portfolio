@@ -103,11 +103,11 @@ function AboutMe() {
             </div>
             <div class="about-me-left-text">
               <h4>Front End Web Developer</h4>
-              <h8>
+              <h7>
                 Welcome! I'm <strong>Amy, </strong>a front-end web developer
                 with a passion for crafting user-friendly, visually engaging,
                 and dynamic web applications.
-              </h8>
+              </h7>
             </div>
           </div>
           <div class="about-me-right">
