@@ -84,8 +84,6 @@ function AboutMe() {
         "Collaborative and Outcome-Driven",
       ],
     },
-
-    // Add more accordion sections as needed
   ];
 
   return (

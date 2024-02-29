@@ -42,7 +42,7 @@ function Portfolio() {
                     <h4>Simply Sweet by Amy</h4>
                     <div>
                       Personal home bakery business located in MN specializing
-                      in artisinal macarons inspired by cultural flavors.
+                      in artisanal macarons inspired by cultural flavors.
                     </div>
                     <div>Built with React, TailwindCSS, and JavaScript</div>
                   </div>
@@ -119,7 +119,7 @@ function Portfolio() {
                     <h4>Hospice Medical</h4>
                     <div>
                       Thoughtfully crafted and responsive website mirroring a
-                      medical business wirefame, tailored for seamless viewing
+                      medical business wireframe, tailored for seamless viewing
                       across all screen sizes.
                     </div>
                     <div>Built with HTML5 and CSS3</div>
