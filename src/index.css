@@ -1337,14 +1337,14 @@ nav {
 }
 
 .resume-card-1 {
-  background-image: url("../public/images/resume-front-page-medium.jpg");
+  background-image: url("../public/images/amy-dinh-resume-front-page-resize.png");
   background-repeat: none;
   background-position: center;
   background-size: cover;
 }
 
 .resume-card-2 {
-  background-image: url("../public/images/resume-back-page-medium.jpg");
+  background-image: url("../public/images/amy-dinh-resume-work-experience-resize.png");
   background-repeat: none;
   background-position: center;
   background-size: cover;
