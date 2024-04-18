@@ -1276,7 +1276,7 @@ nav {
 /* ---------- Resume ---------- */
 .resume-container {
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -1400,9 +1400,13 @@ nav {
 
 @media screen and (max-width: 1200px) {
   .resume-container {
-    height: 100%;
+    padding-top: 80px;
+    padding-bottom: 50px;
   }
-
+  .resume-container {
+    padding-top: 80px;
+    padding-bottom: 50px;
+  }
   .resume-card-popup button {
     visibility: visible;
   }
@@ -1410,10 +1414,9 @@ nav {
 
 @media screen and (max-width: 1000px) {
   .resume-container {
-    padding-top: 80px;
+    padding-top: 50px;
     padding-bottom: 50px;
   }
-
   .resume-card {
     width: 340px;
     height: 440px;
@@ -1651,9 +1654,15 @@ nav {
   }
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
   .contact-container {
     padding-top: 80px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .contact-container {
+    padding-top: 50px;
   }
   .contact-content {
     padding: 40px;
