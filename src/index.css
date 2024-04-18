@@ -1120,6 +1120,10 @@ nav {
 }
 
 @media screen and (max-width: 1400px) {
+  .portfolio-container {
+    height: 100%;
+    padding-bottom: 100px;
+  }
   .portfolio-content {
     height: 100%;
   }
